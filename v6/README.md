@@ -61,10 +61,9 @@
   
 ==========v6==========  
   
-ADDING AUTHENTICATION  
-16. Add User Model  
+16. Add User Model(Adding Authetication)  
 	16.1. Install all packages needed for auth  
-		-install passport, passport-local, passport-local-mongoose, express-session  
+	\-install passport, passport\-local, passport\-local\-mongoose, express\-session  
 	16.2. Define User Model  
 17. Register  
 	17.1. Configure Passport  
