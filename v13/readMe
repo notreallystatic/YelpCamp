@@ -1,0 +1,170 @@
+==========v1==========	
+
+1. node -init  
+2. Install express and ejs.  
+3. Add route for landing page and the campgrounds page.  
+4. Layout and Basic Styling  
+	4.1. Create Header and Footer partials  
+	4.2. Add Bootstrap  
+5. Creating new Campgrounds  
+	5.1. Setup new Campground POST route  
+	5.2. Add in body-parse (npm install body-parser --save)  
+	5.3. Setup Route to show form  
+	5.4. Add basic unstyled form  
+6. Style the Campgrounds Page  
+	6.1. Add a better header/title  
+	6.2. Mak ecampgrounds display in a grid  
+7. Style the navbar and Form  
+	7.1. Add a navbar to all templates  
+	7.2. Style the new campground form  
+
+==========v2==========	
+  
+8. Add Mongoose  
+	8.1. Install and Configure Mongoose  
+	8.2. Setup Campground Model  
+	8.3. Use Campground model inside our routes  
+9. Show Page  
+	9.1. Review the REST'ful Routes we've seen so far  
+	9.2. Add description to our campground model  
+	9.3. Show db.collection.drop()  
+	9.4. Add a show route/template  
+  
+	NOTE: The "/campgrounds/new" route should be defined before the "/campgrounds/:id" route, cause ":id" means anything, be it a number or "new".  
+   	
+==========v3==========	
+  
+10. Refactor Mongoose Code  
+	10.1. Create a models directory  
+	10.2. Use module.exports  
+	10.3. Require everything correctly!  
+11. Add Seeds file  
+	11.1. Add a seeds.js file  
+	11.2. Run the seeds file every time the server starts  
+12. Add the Comment Model  
+	12.1. Clear the errors  
+	12.2. Display comments on campgrounds show page  
+  
+==========v4==========  
+  
+13. Comments New/Create-Discuss Nested Routes  
+	13.1. Add the comment new and create route  
+	13.2. Add the comment form  
+  
+==========v5==========  
+  
+14. Style Show Page  
+	14.1. Add sidebar to show page  
+	14.2. Display Comments nicely  
+15. Add custom CSS file  
+	15.1. Style the Show page  
+  
+==========v6==========  
+  
+ADDING AUTHENTICATION  
+16. Add User Model  
+	16.1. Install all packages needed for auth  
+		-install passport, passport-local, passport-local-mongoose, express-session  
+	16.2. Define User Model  
+17. Register  
+	17.1. Configure Passport  
+	17.2. Add register routes  
+	17.3. Add register template  
+18. Login  
+	18.1. Add login routes  
+	18.2. Add login template  
+19. Logout & refactor the Navbar  
+	19.1. Add logout route  
+	19.2. Prevent users from adding a comment if they are not signed in  
+	19.3. Add links to navbar  
+	19.4. Show/hide auth links correctly  
+20. Show/hide auth links in Navbar  
+  
+==========v7==========  
+  
+21. Refactor the routes  
+	21.1. Use Express router to reorganize all routes  
+	
+==========v8==========  
+  
+22. Users and Comments  
+	22.1. Associate Users and Comments  
+	22.2. Save author's name to a comment automatically  
+	
+==========v9==========  
+  
+23. Users and Campgrounds  
+	23.1. Prevent an Unautheticated user from creating a campground  
+	23.2. Save username+id to newly created campground  
+  
+==========v10==========  
+  
+24. Editing Campgrounds  
+	24.1. Add Method-Override  
+	24.2. Add Edit route for campgrounds  
+	24.3. Add link to edit page  
+	24.4. Add Update route  
+  
+25. Deleting Campgrounds  
+	25.1. Add destroy route  
+	25.2. Add delete button  
+  
+26. Authorization 1: Campgrounds  
+	26.1. User can only edit his/her campgrounds  
+	26.2. User can only delete his/her campgrounds  
+	26.3. Hide/Show edit and delete buttons  
+  
+27. Editing Comments  
+	27.1. Add Edit route for Comments  
+	27.2. Add Edit Button  
+	27.3. Add Update Route  
+  
+28. Deleting Comments  
+	28.1. Add destroy route  
+	28.2. Add Delete Button  
+  
+29. Authorization 2: Comments  
+	29.1. User can only edit his/her comments  
+	29.2. User can only delete his/her comments  
+	29.3. Hide/show edit & delete buttons  
+	29.4. Refactor Middleware  
+  
+==========v11==========  
+  
+30. Adding in Flash!  
+	30.1. Install and configure connect-flash  
+	30.2. Add bootstrap alerts to header  
+  
+31. Styling the landing Page  
+	31.1. Adding in animation  
+  
+32. Adding the Dynamic Price feature  
+  
+==========v12==========  
+  
+33. Adding in Google Maps for the Campground Location  
+	33.1. Get the API key  
+	33.2. Restrict the API for https  
+	33.3. Enable Geolocation, get the API  
+	33.4. Install dotenv  
+	33.5. Create the .env file and put the GEOCODER_API_KEY  
+	33.5. If using heroku, export the key using: heroku config:set GEOCODER_API_KEY=key_here  
+	33.6. Install geocoder, npm install geocoder --save  
+	33.7. Add the .env file in .gitignore  
+  
+==========v13==========  
+  
+34. Adding time since... feature using Moment JS  
+	34.1. Installing moment js  
+	34.2. Require moment and add it to app.locals  
+	34.3. Update Campgrounds & Comment models  
+	34.4. Use moment in show.ejs file  
+  
+35. Adding Admin role  
+	35.1. Adding in admin to authorize a user to edit/delete any campgrounds/comments.  
+  
+36. Creating User Profiles  
+	36.1. Creating show page for a user  
+	36.2. Display user details and show the list of associated campgrounds  
+  
+	
