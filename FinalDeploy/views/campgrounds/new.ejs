@@ -1,0 +1,54 @@
+<%- include("../partials/header") %>
+<h1 class="h3 mb-3 font-weight-normal text-center">
+  Create a new Campground!
+</h1>
+<div class="row justify-content-md-center">
+  <div class="col-lg-6 col-md-8 col-sm-12">
+    <form action="/campgrounds" method="POST" enctype="multipart/form-data">
+      <label for="name">Name</label>
+      <input
+        class="form-control"
+        type="text"
+        name="campground[name]"
+        placeholder="Name"
+      />
+      <br />
+      <label for="price">Price</label>
+      <input
+        class="form-control"
+        type="number"
+        name="campground[price]"
+        placeholder="price"
+        min="500"
+        step="500"
+      />
+      <br />
+      <br />
+      <label for="image">Image</label>
+      <input type="file" id="image" name="image" accept="image/*" required />
+      <br />
+      <br />
+      <label for="description">Description</label>
+      <input
+        class="form-control"
+        type="text"
+        name="campground[description]"
+        placeholder="description"
+      />
+      <br />
+      <label for="location">Location</label>
+      <input
+        class="form-control"
+        type="text"
+        name="campground[location]"
+        id="location"
+        placeholder="Yosemite National Park, CA"
+      />
+      <br />
+      <button class="btn btn-lg btn-primary btn-block">Submit!</button>
+      <a href="/campgrounds">Go Back?</a>
+    </form>
+  </div>
+</div>
+
+<%- include("../partials/footer") %>
